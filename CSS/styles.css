@@ -1,3 +1,10 @@
 * {
   font-family: "Geist";
+  font-weight: var(--regular-font-weight);
+  color: var(--main-text-color);
+  font-size: var(--base-font-size);
+}
+
+body {
+  background-color: var(--background-color);
 }

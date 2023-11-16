@@ -2,7 +2,7 @@
   --main-text-color: #010101;
   --secondary-text-color: #a8a8a8;
 
-  --backgroud-color: #fafafa;
+  --background-color: #fafafa;
   --hover-color: #f3f3f3;
 
   --stroke-color: #c2c2c2;
@@ -14,5 +14,5 @@
   --medium-font-weight: 500;
   --semi-bold-font-weight: 600;
 
-  --base-line-heigh: 125.523%;
+  --base-line-height: 125.523%;
 }
