@@ -1,0 +1,21 @@
+.sort--button__container {
+  display: flex;
+  width: 13.4375rem;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 0.0625rem;
+  flex-wrap: wrap;
+}
+.sort--button {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 0.2rem;
+  transition: 150ms;
+  color: var(--secondary-text);
+  font-size: 1.125rem;
+}
+
+.sort--button:hover {
+  background-color: var(--hover-color);
+  color: var(main-text-color);
+}

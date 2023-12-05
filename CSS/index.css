@@ -39,7 +39,7 @@
 
 .header--site__name {
   font-weight: var(--medium-font-weight);
-  padding-right: 13rem;
+  padding-right: 25rem;
 }
 
 .header--page__title {
@@ -50,17 +50,25 @@
 /* this is for the body */
 
 .feed--container {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 1.875rem;
-  margin-left: 33.5rem;
-  margin-top: 1.44rem;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+
   padding-bottom: 4rem;
 }
 
+.manga--preview__header {
+  position: relative;
+  display: flex;
+  padding-bottom: 0.625rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+  flex-shrink: 0;
+}
 .manga--preview {
-  position: ;
   display: flex;
   width: 22.9375rem;
   height: 17.0625rem;
@@ -70,12 +78,21 @@
   align-items: flex-start;
 }
 
-.manga--preview__header {
+.manga--preview__info {
   display: flex;
-  width: 2.5rem;
-  padding: 0.625rem;
-  justify-content: center;
-  align-items: center;
-  gap: 0.625rem;
-  flex-shrink: 0;
+  flex-direction: row;
+  padding-bottom: 0.625rem;
+  gap: 1.25rem;
+}
+
+.manga--preview__name {
+  font-weight: var(--medium-font-weight);
+}
+
+.item {
+  color: var(--secondary-text-color);
+}
+
+.manga--preview__release-year {
+  color: var(--secondary-text-color);
 }
