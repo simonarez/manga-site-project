@@ -1,3 +1,5 @@
+//This file is code for making the drop-down menu functional
+
 // Getting the button
 const button = document.querySelector(".drop-down__menu--button");
 const dropdownContainer = document.querySelector(

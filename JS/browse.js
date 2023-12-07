@@ -1,3 +1,5 @@
+// This files is javascript for the browse page.
+
 // Getting the button
 const buttonLetter = document.querySelectorAll(".sort--button");
 const mangaList = document.querySelectorAll(".manga--list");
@@ -23,6 +25,8 @@ function displayManga(event) {
     }
   });
 }
+
+//This code is for creating a rectangle around the letter that the mouse is hovering over.
 
 function mangaListActive(event) {
   const hoveredButton = event.currentTarget;
