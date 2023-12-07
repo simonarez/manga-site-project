@@ -62,5 +62,5 @@ ul {
 }
 
 a:hover {
-  color: var(--hover-color);
+  color: var(--secondary-text-color);
 }

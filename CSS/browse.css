@@ -34,7 +34,7 @@
 /* This is page content */
 
 .browse--container {
-  margin: 5rem 10rem;
+  margin: 10rem 9rem;
 }
 
 .browse-container__header {
@@ -44,31 +44,35 @@
 }
 
 .sort--button__container {
-  position: relative;
   display: flex;
-  width: 13.4375rem;
-  align-items: flex-start;
-  align-content: flex-start;
+  position: fixed;
+  width: 30rem;
   gap: 0.0625rem;
   flex-wrap: wrap;
-  top: 10rem;
 }
+
 .sort--button {
-  border-radius: 0.2rem;
   color: var(--secondary-text);
   display: flex;
-  width: 2.1875rem;
-  height: 2.1875rem;
-  padding: 0.625rem;
+  width: 4rem;
+  height: 4rem;
   justify-content: center;
   align-items: center;
   gap: 0.625rem;
   flex-shrink: 0;
+  font-size: var(--large-font-size);
 }
 
 .sort--button:hover {
-  border: 1px solid var(--hover-color);
+  border: 2px solid var(--main-text-color);
   color: var(main-text-color);
+  border-radius: 3px;
+}
+
+.sort--active {
+  border: 2px solid black;
+  color: var(main-text-color);
+  border-radius: 3px;
 }
 
 .manga--list__container {
@@ -76,16 +80,124 @@
   flex-direction: column;
   gap: 2rem;
   align-items: center;
+  padding-left: 20rem;
 }
 
 .manga--list {
+  position: absolute;
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  width: 20rem;
+  width: 40rem;
   display: none;
 }
 
 .manga--visible {
   display: flex;
+}
+.manga--list__item {
+  font-size: var(--large-font-size);
+  color: var(--secondary-text-color);
+}
+
+/* This is to make it responsive for phones */
+
+@media (max-width: 1280px) {
+  .header {
+    display: flex;
+    gap: 5rem;
+    padding: 1rem 2.5rem;
+  }
+  .sort--button__container {
+    display: flex;
+    position: fixed;
+    width: 17rem;
+    gap: 0.0625rem;
+    flex-wrap: wrap;
+    left: 2rem;
+  }
+
+  .sort--button {
+    display: flex;
+    width: 2.5rem;
+    height: 2.5rem;
+    gap: 0.625rem;
+    font-size: var(--medium-font-size);
+    color: var(--secondary-text);
+  }
+
+  .manga--list__container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    padding-left: 20rem;
+  }
+
+  .manga--list {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 40rem;
+    display: none;
+  }
+
+  .manga--visible {
+    display: flex;
+  }
+  .manga--list__item {
+    font-size: var(--medium-font-size);
+    color: var(--secondary-text-color);
+  }
+}
+
+@media (max-width: 700px) {
+  .header {
+    display: flex;
+    gap: 5rem;
+    padding: 1rem 2.5rem;
+  }
+  .sort--button__container {
+    display: flex;
+    position: fixed;
+    width: 10rem;
+    gap: 0.0625rem;
+    flex-wrap: wrap;
+    left: 2rem;
+  }
+
+  .sort--button {
+    display: flex;
+    width: 1.5rem;
+    height: 1.5rem;
+    gap: 0.625rem;
+    font-size: var(--regular-font-size);
+    color: var(--secondary-text);
+  }
+
+  .manga--list__container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    padding-left: 20rem;
+  }
+
+  .manga--list {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 40rem;
+    display: none;
+  }
+
+  .manga--visible {
+    display: flex;
+  }
+  .manga--list__item {
+    font-size: var(--medium-font-size);
+    color: var(--secondary-text-color);
+  }
 }

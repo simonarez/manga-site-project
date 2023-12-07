@@ -6,6 +6,7 @@ const mangaList = document.querySelectorAll(".manga--list");
 
 buttonLetter.forEach((button) => {
   button.addEventListener("click", displayManga);
+  button.addEventListener("click", mangaListActive);
 });
 
 function displayManga(event) {
@@ -21,4 +22,14 @@ function displayManga(event) {
       manga.classList.remove("manga--visible");
     }
   });
+}
+
+function mangaListActive(event) {
+  const hoveredButton = event.currentTarget;
+
+  buttonLetter.forEach((button) => {
+    button.classList.remove("sort--active");
+  });
+
+  hoveredButton.classList.add("sort--active");
 }
