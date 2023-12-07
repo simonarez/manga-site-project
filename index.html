@@ -7,100 +7,40 @@
     <link rel="stylesheet" href="../CSS/fonts.css" />
     <link rel="stylesheet" href="../CSS/variables.css" />
     <link rel="stylesheet" href="../CSS/styles.css" />
-    <link rel="stylesheet" href="../CSS/index.css" />
-    <title>ivorypages</title>
+    <link rel="stylesheet" href="../CSS/log-in.css" />
+    <title>Document</title>
   </head>
+
+  <!-- This is the log in page, and landing page for this site. -->
   <body>
-    <header class="header">
-      <div class="drop-down">
-        <button class="drop-down__menu--button">menu</button>
-        <div class="drop-down--element__container">
-          <a class="drop-down--element" href="browse.html">browse</a>
-          <a class="drop-down--element" href="index.html">main</a>
-          <a class="drop-down--element" href="log-in.html">log in</a>
-        </div>
-      </div>
-
-      <span class="header--site__name">ivorypages</span>
-      <span class="header--page__title">curated</span>
+    <header class="log-in--header__container">
+      <h1 class="log-in--header">ivorypages</h1>
+      <p class="log-in--page__description">Welcome to ivorypages, where manga 
+        meets simplicity. Explore our clutter-free design and dive 
+        into captivating stories. Navigate seamlessly through a curated 
+        collection with our clean interface.</p>
     </header>
+    <div class="log-in">
+      <input
+        type="text"
+        placeholder="username"
+        class="log-in--input"
+      />
+      <input
+        type="text"
+        placeholder="password"
+        class="log-in--input"
+      />
 
-    <div class="feed--container">
-      <div class="manga--preview">
-        <div class="manga--preview__header">
-          <div class="manga--preview__name">Tengoku Daimakyou</div>
-          <div class="manga--preview__release-year">2018</div>
+      <div class="log-in--nav">
+        
+        <divl class="log-in--nav__button--container">
+          <a class="log-in--button" href="browse.html">Log in</a>
+          <button class="sign-up--button">Sign up</button>
         </div>
 
-        <div class="manga--preview__info">
-          <div class="manga--preview__genre item">Sci-Fi</div>
-          <div class="manga--preview__number-of- itemchapters item">
-            Chapters: 50
-          </div>
-          <div class="manga--preview__languages item">ENG/JPN</div>
-        </div>
-
-        <div class="manga--preview__description item">
-          Some children live in a comfortably numb world, surrounded by walls.
-          However, one day, a kid named Tokio receives a message asking "Do you
-          want to go outside of the outside?" Now, from the Heaven that is
-          starting to crumble, the children begin their adventure!
-        </div>
-      </div>
-
-      <div class="manga--preview">
-        <div class="manga--preview__header">
-          <div class="manga--preview__name">Berserk</div>
-          <div class="manga--preview__release-year">1990</div>
-        </div>
-
-        <div class="manga--preview__info">
-          <div class="manga--preview__genre item">Fantasy</div>
-          <div class="manga--preview__number-of-chapters item">
-            Chapters: 329
-          </div>
-          <div class="manga--preview__languages item">ENG/JPN</div>
-        </div>
-
-        <div class="manga--preview__description">
-          Guts, known as the Black Swordsman, seeks sanctuary from the demonic
-          forces attracted to him and his woman because of a demonic mark on
-          their necks, and also vengeance against the man who branded him as an
-          unholy sacrifice. Aided only by his titanic strength gained from a
-          harsh childhood lived with mercenaries, a gigantic sword, and an iron
-          prosthetic left hand, Guts must struggle against his bleak destiny,
-          all the while fighting with a rage that might strip him of his
-          humanity.
-        </div>
-      </div>
-
-      <div class="manga--preview">
-        <div class="manga--preview__header">
-          <div class="manga--preview__name">Vinland saga</div>
-          <div class="manga--preview__release-year">2005</div>
-        </div>
-
-        <div class="manga--preview__info">
-          <div class="manga--preview__genre item">Adventure</div>
-          <div class="manga--preview__number-of-chapters item">
-            Chapters: 180
-          </div>
-          <div class="manga--preview__languages item">ENG/JPN</div>
-        </div>
-
-        <div class="manga--preview__description">
-          As a child, Thorfinn sat at the feet of the great Leif Ericson and
-          thrilled to wild tales of a land far to the west. But his youthful
-          fantasies were shattered by a mercenary raid. Raised by the Vikings
-          who murdered his family, Thorfinn became a terrifying warrior, forever
-          seeking to kill the band's leader, Askeladd, and avenge his father.
-          Sustaining Thorfinn through his ordeal are his pride in his family and
-          his dreams of a fertile westward land, a land without war or slavery…
-          the land Leif called Vinland.
-        </div>
+        <button class="lost-password--button">Lost password?</button>
       </div>
     </div>
-
-    <script src="../JS/header.js"></script>
   </body>
 </html>
