@@ -1,21 +1,119 @@
+/* This is the header component */
+.header {
+  display: flex;
+  width: 100%;
+  height: 4rem;
+  align-items: center;
+  flex-shrink: 0;
+  border-bottom: 1px solid var(--stroke-color);
+  padding: 0.625rem 0.625rem 0.625rem 9.5rem;
+}
+
+.nav--menu__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 1.8rem;
+}
+
+.drop-down__menu--button {
+  display: flex;
+  width: 3.1875rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.drop-down--element__container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  padding-top: 15rem;
+}
+
+.menu--arrow {
+  width: 1rem;
+  height: 1rem;
+  stroke-width: 2px;
+}
+
+.header--site__name {
+  padding-right: 25rem;
+}
+
+.header--page__title {
+  padding: 0.625rem;
+}
+
+/* This is page content */
+
+.browse--container {
+  margin: 5rem 10rem;
+}
+
+.browse-container__header {
+  display: flex;
+  justify-content: center;
+  font-size: var(--medium-font-size);
+}
+
 .sort--button__container {
+  position: relative;
   display: flex;
   width: 13.4375rem;
   align-items: flex-start;
   align-content: flex-start;
   gap: 0.0625rem;
   flex-wrap: wrap;
+  top: 10rem;
 }
 .sort--button {
-  width: 1.5rem;
-  height: 1.5rem;
   border-radius: 0.2rem;
-  transition: 150ms;
   color: var(--secondary-text);
-  font-size: 1.125rem;
+  display: flex;
+  width: 2.1875rem;
+  height: 2.1875rem;
+  padding: 0.625rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  flex-shrink: 0;
 }
 
 .sort--button:hover {
-  background-color: var(--hover-color);
+  border: 1px solid var(--hover-color);
   color: var(main-text-color);
+}
+
+.search-bar {
+  display: flex;
+  width: 15.5rem;
+  height: 1.875rem;
+  padding: 0.625rem 0.625rem 0.625rem 0.9375rem;
+  align-items: center;
+  gap: 0.625rem;
+  flex-shrink: 0;
+
+  border-radius: 0.3125rem;
+  border: 1px solid #e1e1e1;
+  background: var (--background-color);
+}
+
+.manga--list__container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.manga--list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 20rem;
+  display: none;
+}
+
+.manga--visible {
+  display: block;
 }

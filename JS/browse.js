@@ -1,38 +1,25 @@
-const mangaListNames = [
-  "Attack on Titan",
-  "Akame Ga Kill",
-  "Akira",
-  "Assassination Classroom",
-  "Berserk",
-  "Bleach",
-  "Bullbuster",
-  "Cencoroll",
-  "Chainsaw Man",
-  "Devilman Crybaby",
-  "Demon Slayer",
-  "Ergo Proxy",
-  "Erased",
-];
+const buttonLetter = document.querySelectorAll(".sort--button");
+const mangaList = document.querySelectorAll(".manga--list");
 
-function displayNames(letter) {
-  const filteredNames = names.filter((name) =>
-    name.toLowerCase().startsWith(letter)
-  );
+buttonLetter.forEach((button) => {
+  button.addEventListener("mouseenter", displayManga);
+  //   button.addEventListener("mouseenter", overviewButtonsActive);
+});
 
-  const nameList = document.getElementById("nameList");
+const overviewButtons = document.querySelectorAll(".sort--button");
+const components = document.querySelectorAll(".manga--list");
 
-  nameList.innerHTML = filteredNames
-    .map((name) => `<li class="manga--list__item">${name}</li>`)
-    .join("");
+function displayManga(event) {
+  const button = event.currentTarget;
+  const letterToDisplay = button.dataset.componentLetterButton.toLowerCase();
 
-  // Event listeners for each button clicked
-  const buttons = document.querySelectorAll(".sort--button");
-  buttons.forEach((button) => {
-    button.addEventListener("click", function (event) {
-      const clickedLetter = event.target.textContent.toLowerCase();
-      displayNames(clickedLetter);
-    });
+  mangaList.forEach((manga) => {
+    const mangaLetterButton = manga.dataset.componentListLetter.toLowerCase();
+
+    if (mangaLetterButton.startsWith(letterToDisplay)) {
+      manga.classList.add("manga--visible");
+    } else {
+      manga.classList.remove("manga--visible");
+    }
   });
 }
-
-console.log("Poop");

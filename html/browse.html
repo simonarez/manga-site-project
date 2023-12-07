@@ -8,21 +8,20 @@
     <link rel="stylesheet" href="../CSS/variables.css" />
     <link rel="stylesheet" href="../CSS/styles.css" />
     <link rel="stylesheet" href="../CSS/browse.css" />
-    <script src="../JS/browse.js"></script>
     <title>ivorypages</title>
   </head>
   <body>
     <header class="header">
-      <nav class="nav--bar">
-        <span class="header--drop-down__menu">Menu</span>
-
-        <ul class="drop-down--element__container">
-          <li class="drop-down--element">Browse</li>
-          <li class="drop-down--element">Profile</li>
-          <li class="drop-down--element">Settings</li>
-          <li class="drop-down--element">Help</li>
-        </ul>
-      </nav>
+      <div class="nav--menu__button">
+        <button class="drop-down__menu--button">Menu</button>
+        <img src="../assets/svg/arrow.svg" class="menu--arrow" />
+      </div>
+      <ul class="drop-down--element__container">
+        <li class="drop-down--element">Browse</li>
+        <li class="drop-down--element">Profile</li>
+        <li class="drop-down--element">Settings</li>
+        <li class="drop-down--element">Help</li>
+      </ul>
 
       <span class="header--site__name">ivorypages</span>
       <input type="text" placeholder="Search" class="search-bar" />
@@ -31,38 +30,76 @@
     <div class="browse--container">
       <h1 class="browse-container__header">Browse</h1>
       <div class="sort--button__container">
-        <button class="sort--button">a</button>
-        <button class="sort--button">b</button>
-        <button class="sort--button">c</button>
-        <button class="sort--button">d</button>
-        <button class="sort--button">e</button>
-        <button class="sort--button">f</button>
-        <button class="sort--button">g</button>
-        <button class="sort--button">h</button>
-        <button class="sort--button">i</button>
-        <button class="sort--button">j</button>
-        <button class="sort--button">k</button>
-        <button class="sort--button">l</button>
-        <button class="sort--button">m</button>
-        <button class="sort--button">n</button>
-        <button class="sort--button">o</button>
-        <button class="sort--button">p</button>
-        <button class="sort--button">q</button>
-        <button class="sort--button">r</button>
-        <button class="sort--button">s</button>
-        <button class="sort--button">t</button>
-        <button class="sort--button">u</button>
-        <button class="sort--button">v</button>
-        <button class="sort--button">w</button>
-        <button class="sort--button">x</button>
-        <button class="sort--button">y</button>
-        <button class="sort--button">z</button>
+        <button class="sort--button" data-component-letter-button="a">a</button>
+        <button class="sort--button" data-component-letter-button="b">b</button>
+        <button class="sort--button" data-component-letter-button="c">c</button>
+        <button class="sort--button" data-component-letter-button="d">d</button>
+        <button class="sort--button" data-component-letter-button="e">e</button>
+        <button class="sort--button" data-component-letter-button="f">f</button>
+        <button class="sort--button" data-component-letter-button="g">g</button>
+        <button class="sort--button" data-component-letter-button="h">h</button>
+        <button class="sort--button" data-component-letter-button="i">i</button>
+        <button class="sort--button" data-component-letter-button="j">j</button>
+        <button class="sort--button" data-component-letter-button="k">k</button>
+        <button class="sort--button" data-component-letter-button="l">l</button>
+        <button class="sort--button" data-component-letter-button="m">m</button>
+        <button class="sort--button" data-component-letter-button="n">n</button>
+        <button class="sort--button" data-component-letter-button="o">o</button>
+        <button class="sort--button" data-component-letter-button="p">p</button>
+        <button class="sort--button" data-component-letter-button="q">q</button>
+        <button class="sort--button" data-component-letter-button="r">r</button>
+        <button class="sort--button" data-component-letter-button="s">s</button>
+        <button class="sort--button" data-component-letter-button="t">t</button>
+        <button class="sort--button" data-component-letter-button="u">u</button>
+        <button class="sort--button" data-component-letter-button="v'">
+          v
+        </button>
+        <button class="sort--button" data-component-letter-button="w">w</button>
+        <button class="sort--button" data-component-letter-button="x">x</button>
+        <button class="sort--button" data-component-letter-button="y">y</button>
+        <button class="sort--button" data-component-letter-button="z">z</button>
       </div>
 
       <!-- add letter next to first manga displayed -->
-      <ul class="manga--list">
-        <li class="manga--list__item">Attack on Titan</li>
-      </ul>
+      <div class="manga--list__container">
+        <div>
+          <ul class="manga--list" data-component-list-letter="a">
+            <li class="manga--list__item">Attack on Titan</li>
+            <li class="manga--list__item">Akira</li>
+            <li class="manga--list__item">Akame Ga Kill</li>
+            <li class="manga--list__item">Assassination clasroom</li>
+            <li class="manga--list__item">Another</li>
+            <li class="manga--list__item">Angel Beats!</li>
+            <li class="manga--list__item">A Certain Magical Index</li>
+            <li class="manga--list__item">Afro samurai</li>
+          </ul>
+        </div>
+
+        <ul class="manga--list" data-component-list-letter="b">
+          <li class="manga--list__item">Berserk</li>
+          <li class="manga--list__item">Bleach</li>
+          <li class="manga--list__item">Bullbuster</li>
+          <li class="manga--list__item">Bungo stray dogs</li>
+          <li class="manga--list__item">Btoom</li>
+          <li class="manga--list__item"></li>
+        </ul>
+
+        <ul class="manga--list" data-component-list-letter="c">
+          <li class="manga--list__item">Cencoroll</li>
+          <li class="manga--list__item">Chainsaw Man</li>
+        </ul>
+
+        <ul class="manga--list" data-component-list-letter="d">
+          <li class="manga--list__item">Devilman Crybaby</li>
+          <li class="manga--list__item">Demon Slayer</li>
+        </ul>
+
+        <ul class="manga--list" data-component-list-letter="e">
+          <li class="manga--list__item">Ergo proxy</li>
+          <li class="manga--list__item">Erased</li>
+        </ul>
+      </div>
     </div>
+    <script src="../JS/browse.js"></script>
   </body>
 </html>

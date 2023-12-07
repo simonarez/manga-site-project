@@ -8,7 +8,6 @@
   flex-shrink: 0;
   border-bottom: 1px solid var(--stroke-color);
   padding: 0.625rem 0.625rem 0.625rem 9.5rem;
-  background: #eee;
 }
 
 .nav--menu__button {
@@ -24,8 +23,6 @@
   justify-content: center;
   align-items: center;
   gap: 0.625rem;
-
-  font-weight: var(--medium-font-weight);
 }
 
 .drop-down--element__container {
@@ -38,12 +35,10 @@
 }
 
 .header--site__name {
-  font-weight: var(--medium-font-weight);
   padding-right: 25rem;
 }
 
 .header--page__title {
-  font-weight: var(--medium-font-weight);
   padding: 0.625rem;
 }
 
