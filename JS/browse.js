@@ -1,13 +1,12 @@
+// Getting the button
 const buttonLetter = document.querySelectorAll(".sort--button");
 const mangaList = document.querySelectorAll(".manga--list");
 
-buttonLetter.forEach((button) => {
-  button.addEventListener("mouseenter", displayManga);
-  //   button.addEventListener("mouseenter", overviewButtonsActive);
-});
+// Toggle visibility
 
-const overviewButtons = document.querySelectorAll(".sort--button");
-const components = document.querySelectorAll(".manga--list");
+buttonLetter.forEach((button) => {
+  button.addEventListener("click", displayManga);
+});
 
 function displayManga(event) {
   const button = event.currentTarget;

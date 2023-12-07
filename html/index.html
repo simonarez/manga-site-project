@@ -12,20 +12,18 @@
   </head>
   <body>
     <header class="header">
-      <div class="nav--menu__button">
-        <button class="drop-down__menu--button">Menu</button>
-        <img src="../assets/svg/arrow.svg" class="menu--arrow" />
+      <div class="drop-down">
+        <button class="drop-down__menu--button">menu</button>
+        <div class="drop-down--element__container">
+          <a class="drop-down--element" href="browse.html">browse</a>
+          <a class="drop-down--element">profile</a>
+          <a class="drop-down--element" href="index.html">main</a>
+          <a class="drop-down--element">help</a>
+        </div>
       </div>
 
-      <ul class="drop-down--element__container">
-        <li class="drop-down--element">Browse</li>
-        <li class="drop-down--element">Profile</li>
-        <li class="drop-down--element">Settings</li>
-        <li class="drop-down--element">Help</li>
-      </ul>
-
       <span class="header--site__name">ivorypages</span>
-      <span class="header--page__title">Curated</span>
+      <span class="header--page__title">curated</span>
     </header>
 
     <div class="feed--container">
@@ -103,5 +101,7 @@
         </div>
       </div>
     </div>
+
+    <script src="../JS/header.js"></script>
   </body>
 </html>

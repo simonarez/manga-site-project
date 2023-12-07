@@ -1,48 +1,34 @@
 /* This is the header component */
 .header {
   display: flex;
-  width: 100%;
-  height: 4rem;
-  align-items: center;
-  flex-shrink: 0;
-  border-bottom: 1px solid var(--stroke-color);
-  padding: 0.625rem 0.625rem 0.625rem 9.5rem;
+  gap: 5rem;
+  padding: 2rem 10rem;
 }
 
-.nav--menu__button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-right: 1.8rem;
+.drop-down {
+  position: relative;
+  display: inline-block;
 }
 
 .drop-down__menu--button {
   display: flex;
-  width: 3.1875rem;
-  justify-content: center;
-  align-items: center;
-  gap: 0.625rem;
+  padding-bottom: 1.3rem;
+  cursor: pointer;
 }
 
 .drop-down--element__container {
-  display: flex;
+  display: none;
+  position: absolute;
   flex-direction: column;
   gap: 1.3rem;
-  padding-top: 15rem;
 }
 
-.menu--arrow {
-  width: 1rem;
-  height: 1rem;
-  stroke-width: 2px;
-}
-
-.header--site__name {
-  padding-right: 25rem;
+.drop-down__visible {
+  display: flex;
 }
 
 .header--page__title {
-  padding: 0.625rem;
+  color: var(--secondary-text-color);
 }
 
 /* This is page content */
@@ -53,7 +39,7 @@
 
 .browse-container__header {
   display: flex;
-  justify-content: center;
+  align-items: center;
   font-size: var(--medium-font-size);
 }
 
@@ -85,20 +71,6 @@
   color: var(main-text-color);
 }
 
-.search-bar {
-  display: flex;
-  width: 15.5rem;
-  height: 1.875rem;
-  padding: 0.625rem 0.625rem 0.625rem 0.9375rem;
-  align-items: center;
-  gap: 0.625rem;
-  flex-shrink: 0;
-
-  border-radius: 0.3125rem;
-  border: 1px solid #e1e1e1;
-  background: var (--background-color);
-}
-
 .manga--list__container {
   display: flex;
   flex-direction: column;
@@ -115,5 +87,5 @@
 }
 
 .manga--visible {
-  display: block;
+  display: flex;
 }

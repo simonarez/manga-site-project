@@ -1,45 +1,33 @@
-/* This is header css */
-
+/* This is the header component */
 .header {
   display: flex;
-  width: 100%;
-  height: 4rem;
-  align-items: center;
-  flex-shrink: 0;
-  border-bottom: 1px solid var(--stroke-color);
-  padding: 0.625rem 0.625rem 0.625rem 9.5rem;
+  gap: 5rem;
+  padding: 2rem 10rem;
 }
 
-.nav--menu__button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-right: 1.8rem;
+.drop-down {
+  position: relative;
+  display: inline-block;
 }
 
 .drop-down__menu--button {
   display: flex;
-  width: 3.1875rem;
-  justify-content: center;
-  align-items: center;
-  gap: 0.625rem;
+  padding-bottom: 1.3rem;
 }
 
 .drop-down--element__container {
   display: none;
-}
-.menu--arrow {
-  width: 1rem;
-  height: 1rem;
-  stroke-width: 2px;
+  position: absolute;
+  flex-direction: column;
+  gap: 1.3rem;
 }
 
-.header--site__name {
-  padding-right: 25rem;
+.drop-down__visible {
+  display: flex;
 }
 
 .header--page__title {
-  padding: 0.625rem;
+  color: var(--secondary-text-color);
 }
 
 /* this is for the body */

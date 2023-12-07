@@ -12,23 +12,21 @@
   </head>
   <body>
     <header class="header">
-      <div class="nav--menu__button">
-        <button class="drop-down__menu--button">Menu</button>
-        <img src="../assets/svg/arrow.svg" class="menu--arrow" />
+      <div class="drop-down">
+        <a class="drop-down__menu--button">menu</a>
+        <div class="drop-down--element__container">
+          <a class="drop-down--element" href="browse.html">browse</a>
+          <a class="drop-down--element">profile</a>
+          <a class="drop-down--element" href="index.html">main</a>
+          <a class="drop-down--element">help</a>
+        </div>
       </div>
-      <ul class="drop-down--element__container">
-        <li class="drop-down--element">Browse</li>
-        <li class="drop-down--element">Profile</li>
-        <li class="drop-down--element">Settings</li>
-        <li class="drop-down--element">Help</li>
-      </ul>
 
       <span class="header--site__name">ivorypages</span>
-      <input type="text" placeholder="Search" class="search-bar" />
+      <h1 class="header--page__title">browse</h1>
     </header>
 
     <div class="browse--container">
-      <h1 class="browse-container__header">Browse</h1>
       <div class="sort--button__container">
         <button class="sort--button" data-component-letter-button="a">a</button>
         <button class="sort--button" data-component-letter-button="b">b</button>
@@ -101,5 +99,6 @@
       </div>
     </div>
     <script src="../JS/browse.js"></script>
+    <script src="../JS/header.js"></script>
   </body>
 </html>
